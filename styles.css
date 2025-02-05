@@ -1,0 +1,206 @@
+body{
+    font-family: "Roboto";
+    color: rgb(0, 6, 56);
+    background:url(Portal_images/background_final.png);
+}
+header{
+    background: linear-gradient(90deg, rgba(255,210,228,1) 0%, rgba(255,255,255,1) 50%, rgba(177,252,164,1) 100%);
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    margin-bottom: 4em;
+}
+#majorprojects{
+    background-color: #FFD2E4;
+    padding: 5px;
+    margin-bottom: 2em;
+    border: black solid 3px;
+}
+#majorprojects h2{
+    text-align: center;
+    margin: 0;
+    padding: 2%;
+}
+#majorprojects ol li{
+    text-align: center;
+    list-style: none;
+}
+#majorprojects ol li a{
+        color: black;
+        line-height: 1.5em;
+        text-decoration: none;
+    }
+#majorprojects ol li a:hover{
+        color: #5b0024;
+        text-decoration: underline;
+        font-weight: bolder;
+    }
+#exercises{
+    background-color: #B1FCA4;
+    padding: 5px;
+    margin-bottom: 2em;
+    border: black solid 3px;
+}
+#exercises h2{
+    text-align: center;
+    margin: 0;
+    padding: 2%;
+}
+
+#exercises ul{
+    margin: 0;
+    padding-left: 10%;
+    padding-bottom: 2%;
+}  
+#exercises ul li {
+    list-style: none;
+} 
+#exercises ul li a{
+    color: black;
+    line-height: 1.5em;
+    text-decoration: none;
+}
+#exercises ul li a:hover{
+    color: #5b0024;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+h1{
+    font-family: "Henny Penny", system-ui;
+    font-size: 2em;
+    text-align: center;
+    line-height: 2em;
+}
+h2{
+    font-family: "Oranienbaum", serif;
+    font-size: 1.75em;
+    padding: 20px;
+}
+h3{
+    font-family: "Oranienbaum", serif;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: white;
+}
+ol li a {
+    color: black;
+}
+ol li a:hover{
+    color: rgb(0, 52, 111);
+}
+ul li a {
+    color: black;
+}
+ul li a:hover{
+    color: rgb(0, 52, 111);
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: linear-gradient(90deg, rgba(255,210,228,1) 0%, rgba(255,255,255,1) 50%, rgba(177,252,164,1) 100%);
+}
+footer address{
+    color: black;
+}
+
+aside {
+    background-color: white;
+    padding: 2%;
+    margin-bottom: 2em;
+    border: black solid 3px;
+}
+
+
+aside div p{
+    line-height: 1.5em;
+}
+
+aside ul li a{
+    text-decoration: none;
+    line-height: 1.25em;
+}
+aside ul li a:hover{
+    text-decoration: underline;
+    color: #093b00;
+    font-weight: bolder;
+}
+@media only screen and (min-width: 600px) {
+    main{
+        display: flex;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    main div {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        width: auto;  
+    }
+aside {
+    flex: 2;
+    margin-bottom: 1.5em;
+    border-radius: 20px;
+    border: black solid 5px;
+}
+aside h3{
+    padding: 0;
+}
+img{
+    display: block;
+}
+#majorprojects{
+    background-color: #FFD2E4;
+    max-width: 95%;
+    border-radius: 20px;
+    margin-bottom: 0;
+    border: black solid 5px;
+}
+#majorprojects h2{
+    padding: 20px;
+    margin:0;
+}
+
+#exercises{
+    background-color:#B1FCA4;
+    max-width: 95%;
+    border-radius: 20px;
+    margin-bottom: 0;
+    border: black solid 5px;
+}
+#exercises h2{
+    padding: 20px;
+
+}
+#exercises ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    margin: auto;
+    padding-left: 5%;
+}
+aside div{
+    display: flex;
+    margin: auto;
+    gap: 30px;
+    background-color: white;
+    padding: 10px;
+}
+aside div img{
+    flex: 1;
+    border: black solid 1px;
+}
+aside div p{
+    flex: 2;
+}
+}

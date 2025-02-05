@@ -1,0 +1,74 @@
+body{
+    font-family: Arial;
+    color:#333
+}
+
+header, footer {
+    text-align: center;
+    padding: 40px 0;
+    background: #DADADA;
+}
+
+nav ul{
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+    border-top: 2px solid #083073;
+}
+
+nav ul li a {
+	display: block;
+	background: #EDBB03;
+	padding: 20px 10px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+	border-bottom: 2px solid #083073;
+}
+
+main{
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+	
+	/***** Layout rules go in here ****/
+    header, footer, #container{
+        max-width: 1020px;
+        margin: auto;
+    }
+
+	#container{
+        display: flex;
+    }
+
+    nav{
+        width: 33.3333%;
+        background-color: #f7e5a3;
+    }
+
+    main{
+        width: 66.6666%;
+    }
+}
+
+@media only screen and (min-width: 1020px) {
+	
+	/***** Maximum sized layout rules go in here ****/
+	nav{
+        width: 25%;
+    }
+
+    main{
+        width: 75%;
+        display: flex;
+        gap: 20px;
+    }
+
+    main article {
+        width: 50%;
+    }
+}
