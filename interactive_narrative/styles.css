@@ -1,0 +1,289 @@
+header{
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px black solid;
+    padding-bottom: 10px;
+}
+/****/
+nav {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 150px;
+    text-align: right;
+}
+
+nav ul {
+    position: absolute;
+    right: 5000px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    background-color: white;
+    border-bottom: 2px solid black;
+    padding: 10px 15px;
+    color: black;
+    font-weight: bold;
+}
+
+nav:hover ul {
+    right: -10px;
+}
+/****/
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+h2{
+    background-color: rgba(255, 255, 255, 0.50);
+    padding: 0.25em;
+    font-family: "Inria Sans", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+#internal h2{
+    background-color: rgba(255, 255, 255, 0.50);
+    padding: 0.5em;
+    font-family: "Inria Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.25em;
+     padding: 1em;
+    margin: auto;
+    text-align: left;
+    max-width: 65%;
+    }
+
+h3{
+    /* .inria-serif-bold {*/
+    font-family: "Inria Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    text-align: center;
+}
+
+aside img{
+    padding-top: 5%;
+    display: block;
+    max-width: 60%;
+    margin: auto;
+}
+p{
+    margin: auto;
+    max-width: 60%;
+    padding-bottom: 5%;
+}
+ aside div p{
+    font-family: "Inria Sans", serif;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 1.5em;
+    }
+#people{
+    background: url(images/people_thumbnail.jpeg);
+    width: 300px;
+    height: 200px;
+    background-size: 300px 200px;
+    text-align: center;
+}
+#plants{
+    background:url(images/plants_thumbnail.jpeg);
+    width: 300px;
+    height: 200px;
+    background-size: 300px 200px;
+    text-align: center;
+}
+#animals{
+    background: url(images/animals_thumbnail.jpeg);
+    width: 300px;
+    height: 200px;
+    background-size: 300px 200px;
+    text-align: center;
+}
+#misc{
+    background: url(images/misc_thumbnail.jpeg);
+    width: 300px;
+    height: 200px;
+    background-size: 300px 200px;
+    text-align: center;
+}
+section div{
+    margin: auto;
+}
+header ul li{
+    list-style: none;
+}
+footer{
+    font-family: "Inria Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #DCEFE0;
+    text-align: center;
+    
+}
+footer p{
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+    margin-top: 3em;
+    margin-bottom: 0;
+}
+#internal section img{
+    padding-top: 5%;
+    padding-bottom: 2.5%;
+    display: block;
+    margin: auto;
+    max-width: 65%;
+    max-height: auto;
+}
+#internal section p{
+    font-family: "Inria Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.1em;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+.current{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+h2{
+    background-color: rgba(255, 255, 255, 0.50);
+    padding: 0.5em;
+    margin: 0;
+}
+aside{
+    width: 1188px;
+    gap: 40px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    margin: auto;
+    display: flex;
+}
+aside img {
+    display: block;
+    flex: 1;
+    max-width: 100%;
+    padding-top: 0;
+}
+aside div {
+    flex: 3;
+}
+aside div h3{
+    margin-top: 0;
+    text-align: left;
+}
+aside div p{
+    margin: 0;
+    max-width: 100%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: last baseline;
+    border-bottom: 3px black solid;
+    padding-bottom: 0;
+}
+nav {
+    position: static;
+    width: auto;
+}
+nav ul {
+    position: static;
+}
+nav ul li a{
+    border-bottom: none;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+ul li {
+    font-family: "Inria Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    flex: 1;
+    font-size: 35px;
+    padding-left: 20px;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 74px;
+   margin: auto;
+   width: 1188px;
+}
+#people{
+    background: url(images/people_thumbnail.jpeg);
+    width: 556.93px;
+    height: 371.33px;
+    background-size: 556.93px 371.33px;
+    text-align: center;
+}
+#plants{
+    background:url(images/plants_thumbnail.jpeg);
+    width: 556.93px;
+    height: 371.33px;
+    background-size: 556.93px 371.33px;
+    text-align: center;
+}
+#animals{
+    background: url(images/animals_thumbnail.jpeg);
+    width: 556.93px;
+    height: 371.33px;
+    background-size: 556.93px 371.33px;
+    text-align: center;
+}
+#misc{
+    background: url(images/misc_thumbnail.jpeg);
+    width: 556.93px;
+    height: 371.33px;
+    background-size: 556.93px 371.33px;
+    text-align: center;
+}
+#internal section{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+}
+#internal section img{
+    padding-top: 100px;
+    padding-bottom: 20px;
+    display: block;
+    margin: auto;
+    max-width: 65%;
+    max-height: auto;
+}
+#internal h2{
+    padding: 1em;
+    margin: auto;
+    text-align: left;
+    max-width: 65%;
+}
+#internal section p{
+    padding-bottom: 10px;
+}
+#hamburger {
+    display: none;
+}
+}
